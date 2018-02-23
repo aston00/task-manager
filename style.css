@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Direct child of body */
+#mainContainer {
+    padding-bottom: 1rem;
+    box-shadow: 0 .3rem .5rem #ccc;
+    min-height: 100vh;
+}
+
+/* Table container */
+#innerList {
+    margin-top: 2rem;
+}
+
+
+#table {
+    box-shadow: 0 .2rem .2rem  lightgrey;
+}
+
+/* Error message container */
+.errorAlert {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width:40%;
+    transform: translate(-50%);
+    opacity: 0; 
+    transition: all .4s;
+}
+
+/* Icons for delete/rename */
+.fa-times, .fa-pencil-square-o {
+    opacity: .8;
+    font-size: 20px;
+}
+
+/* Delete icon */
+.fa-times:hover{
+    opacity: 1;
+    color: red;
+}
+
+/* Rename icon */
+.fa-pencil-square-o:hover {
+    opacity: 1;
+    color: orangered;
+}
+
+/* Table and form container
+#table-form {
+    height: 80vh;
+} */
+
